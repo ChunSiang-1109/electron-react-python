@@ -13,12 +13,12 @@ run the following scrips in a terminal application *(e.g., Git Bash)*:
 
 **Install Python dependencies:**
 ```bash
-pip3 install -r requirements.txt
+pip install -r requirements.txt
 ```
 
 **Install Node dependencies:**
 ```bash
-yarn install
+npm install
 ```
 
 <br>
@@ -42,27 +42,27 @@ Below are the scripts you'll need to run and package your application, as well a
 
 **Start Developer Mode:**
 ```bash
-yarn run start
+npm run start
 ```
 
 **Package Windows: <sup>*1*</sup>**
 ```bash
-yarn run build:package:windows
+npm run build:package:windows
 ```
 
 **Package macOS:**
 ```bash
-yarn run build:package:mac
+npm run build:package:mac
 ```
 
 **Package Linux:**
 ```bash
-yarn run build:package:linux
+npm run build:package:linux
 ```
 
 **Build Documentation:**
 ```bash
-yarn run build:docs
+npm run build:docs
 ```
 
 *<sup>1</sup>Windows uses [electron-wix-msi](https://github.com/felixrieseberg/electron-wix-msi), you must install and add its path to your environment variables.*
