@@ -27,7 +27,7 @@ npm install
 
 **Electron:** Electron's `main.js`, `preload.js`, and `renderer.js` files can be found in the project's root directory.
 
-**React:** React files can be found in the `./src/` folder, the custom toolbar is in `./src/components/toolbar`.
+**React:** React files can be found in the `./src/` folder.
 
 **Python:** Python scripts can be created in the `./app.py` file and used on events via [REST](https://developer.mozilla.org/en-US/docs/Glossary/REST) calls.
 
