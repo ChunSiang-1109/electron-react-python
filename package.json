@@ -1,0 +1,82 @@
+{
+  "author": "Daniel Wade",
+  "description": "Started template for Electron, React, Python app",
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.1.0",
+    "axios": "^1.7.7",
+    "electron-is-dev": "^1.2.0",
+    "get-port": "^5.1.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-redux": "^7.2.0",
+    "react-scripts": "^3.0.1",
+    "styled-components": "^6.1.13"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "@types/react": "^18.3.11",
+    "@types/styled-components": "^5.1.34",
+    "@typescript-eslint/eslint-plugin": "^5.62.0",
+    "@typescript-eslint/parser": "^5.62.0",
+    "babel-eslint": "^10.1.0",
+    "cross-env": "^7.0.3",
+    "electron": "^32.2.0",
+    "electron-devtools-installer": "^3.2.0",
+    "electron-installer-dmg": "^3.0.0",
+    "electron-packager": "^17.1.2",
+    "electron-wix-msi": "^3.0.4",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-standard": "^5.0.0",
+    "jsdoc": "^4.0.3",
+    "sass": "^1.26.5",
+    "typescript": "^5.6.3"
+  },
+  "optionalDependencies": {
+    "electron-installer-debian": "^3.1.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "build": {
+    "extraResources": [
+      "./resources/app"
+    ]
+  },
+  "homepage": "./",
+  "license": "MIT",
+  "main": "main.js",
+  "name": "electron-react-python-template",
+  "private": true,
+  "scripts": {
+    "build": "node ./scripts/dispatch build all",
+    "build:all": "node ./scripts/dispatch build all",
+    "build:react": "node ./scripts/dispatch build react",
+    "build:python": "node ./scripts/dispatch build python",
+    "build:docs": "jsdoc -c jsdoc.json",
+    "build:package:linux": "node ./scripts/dispatch package linux",
+    "build:package:mac": "node ./scripts/dispatch package mac",
+    "build:package:windows": "node ./scripts/dispatch package windows",
+    "clean": "node ./scripts/dispatch clean",
+    "eject": "react-scripts eject",
+    "start": "node ./scripts/dispatch start",
+    "start:electron": "electron .",
+    "start:react": "react-scripts start",
+    "test": "react-scripts test"
+  },
+  "version": "1.0.0"
+}
